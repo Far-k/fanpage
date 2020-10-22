@@ -1,39 +1,28 @@
 document.addEventListener('DOMContentLoaded',() => {
     
-    const addBtn = document.querySelector("#new-post-btn");
-    const postFormContainer = document.querySelector(".container");
-    // const postCollection = document.querySelector("#post-collection")
-    // const addPostForm = document.querySelector(".add-post-form")
+  const postContainer = document.querySelector('#post-container')
     
-    fetch('http://localhost:3000/posts')
-  .then(resp => resp.json())
-  .then(posts => posts.forEach(post => {
-    renderPost(post)
-  })) 
+  const postsURL = 'http://localhost:3000/api/v1/posts'
+  fetch(postsURL)
+  .then(res => res.json())
+  .then(posts => posts.forEach(post => {renderPosts(post)}))
+  
+  function renderPosts(post){
+  
+  const img = document.createElement('image')
+  img.src = post.img_url
 
-  function renderPost(post){
-    let postSpan = document.createElement('span')
-    postSpan.innerText = post.content
-    postSpan.className = 'postSpan'
-    postSpan.addEventListener('click', function(e){
-        e.preventDefault()
-        createPost(post)
-    })
+      
+  const postSpan = document.createElement('span')
+  postSpan.innerText = post.content
+  postSpan.className = "postSpan"
+  postSpan.addEventListener('click', function(e){
+      //e.preventDefault()
+      createPost(post)
+  })
 
-    let postCard = document.createElement('div')
-    postCard.className = "card"
-
-    // let postContent = document.createElement('h2')
-    // postContent.innerText = post.content
-
-    let postImage = document.createElement('img')
-    postImage.src = post.image_url
-    postImage.className = "Image"
-
-
-    postCard.append(postSpan, postImage)
-
-  }
+  postContainer.append(postSpan, img)
+}
 
 
 });
