@@ -17,6 +17,12 @@ class Api::V1::CommentsController < ApplicationController
 
   def update
   end
+
+  def destroy
+    comment = Comment.find(params[:id])
+    comment.destroy
+  end
+   
 private
   def com_params
     params.require(:comment).permit(:post_id, :content, :user_id)

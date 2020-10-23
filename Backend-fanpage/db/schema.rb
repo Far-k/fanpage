@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_10_21_215804) do
     t.string "img_url"
     t.string "content"
     t.integer "user_id"
+    t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

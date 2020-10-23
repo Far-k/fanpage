@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+<style>
+body {
+  font-family: "Amatic SC";
+  font-size: 22px;
+}
+img{
+  border: 10px solid #999;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+</head>
+
+
+<body>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  ul {color:#88e649}
+  h3 {color:#88e649}
+  h4 {color:#88e649}
+  p {color:#88e649}
+  h1{color:#88e649}
+body{
+  background-image: url("https://media1.tenor.com/images/b4902a51f46086dce1e89b36b16fbfaf/tenor.gif?itemid=14837528");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin:100;
+  }
+</style>
+</head>
     <meta charset="utf-8">
     <title>Gerald's Fans</title>
     <!-- <link rel="stylesheet" href="index.css"> -->
-    <script type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/index.js" defer></script>
     <!-- <link rel="shortcut icon" href="https://i.pinimg.com/564x/12/ec/e2/12ece2ddf627170142486d0184b72b91.jpg">  -->
   </head>
-  <body>
 
+
+ 
     <nav class="menu">
+      <!--link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+<div id="btn"><span class="noselect">Hello</span><div id="circle"></div></div>
+
+      <!-- <div class="container">
+        <button class="btn-pill">
+          <span>Pill</span>
+        </button>
+        <button class="btn-shine">
+          <span>Shine</span>
+        </button>
+        <button class="btn-slide-line">
+          <span>Slide Line</span>
+        </button>
+        <button class="btn-slide-line center">
+          <span>Line Center</span>
+        </button>
+      </div> -->
+      <div>
+        <input type="text" id = "username" placeholder = "name">
+        <button type="button" id = "logbtn">login</button>
+      </div>
       <ul>
         <!-- <li><a href="">Home</a></li> -->
-        <li><a href="">Posts</a></li>
-        <li><a href="">Create a post</a></li>
+        <li><a href ="https://www.youtube.com/watch?v=bSfpSOBD30U&ab_channel=GEazyMusicVEVO">Top hit</a></li>
+        <li><a href="https://www.capitalxtra.com/features/facts/g-eazy/">More about geazy</a></li>
       </ul>
     </nav>
     <form class="add-post-form">
@@ -33,11 +108,11 @@
     </form>
     
     <div id="post-container">
-      <img 
+      <!-- <img 
         id="post-img"
         
     
-      />
+      /> -->
 
     </div>
     
