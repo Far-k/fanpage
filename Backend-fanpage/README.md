@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+add a toggle for the posts nav tag on the top of the page.
+add a toggle for the create a post on top of the page so onces clicked, it shows the form for create post

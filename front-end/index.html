@@ -11,26 +11,32 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="">Home</a></li>
+        <!-- <li><a href="">Home</a></li> -->
         <li><a href="">Posts</a></li>
+        <li><a href="">Create a post</a></li>
       </ul>
     </nav>
     <form class="add-post-form">
-      <h3>Create a post!</h3>
+      <!-- <h5>Create a post!</h5> -->
 
       <input
-        type="text"
-        content="content"
-        value=""
-        placeholder="Create a Post"
-        class="input-text"
-      />
+      id="form"
+      type="textfield"
+      content="content"
+      value=""
+      placeholder="Something Exciting"
+      class="input-text"
+
+      >
+      <input type="text" id = "image" placeholder = "image url">
+      <input type = "submit" id = "subbtn" value = "Add Post">
+    </form>
     
     <div id="post-container">
       <img 
         id="post-img"
         
-        alt="post-header"
+    
       />
 
     </div>

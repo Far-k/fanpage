@@ -6,15 +6,24 @@ class Api::V1::PostsController < ApplicationController
 
     def show
         post = Post.find(params[:id])
-        render json: posts
+        render json: post
     end
 
 
     def create
-        post = Post.create(image: "img_url", content: "content", userId: "user_id")
+       
+        post = Post.create!(post_params)
+        render json: post
     end
 
-    def patch
-        
+    def update
+
+
+    end
+
+    private
+
+    def post_params
+        params.require(:post).permit(:img_url, :content, :user_id)
     end
 end
